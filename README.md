@@ -40,11 +40,17 @@ Query language
 Query란, 브라우저가 서버한테 필요한 정보를 질의한다, 라고 생각하기
 
 ------
-API?(application programming interface)
+#### API?(application programming interface)
+브라우저는 많은 API를 가지고 있고 이 말은 즉, 많은 버튼들을 갖고 있다는 의미랑 같은 거다.<br/>
+그리고 이 버튼들은 javascript를 통해서 사용할 수 있다.
 ------
 #### REST api
-URL을 사용하여 서버와 클라이언트가 통신함.
-json을 리턴해줌 
+REST api도 다른 종류의 리모콘일 뿐이다.<br/>
+url을 노출함으로서 버튼을 사용한다.<br/>
+URL을 사용하여 서버와 클라이언트가 통신함.<br/>
+json을 리턴해줌 <br/>
+HTTP method를 바꾸면, 서로 다른 리소스를 갖게 된다. url은 리소스라고 볼 수 있음<br/>
+대표적인 예시 - 트위터api
 <br/>
 ex)
  - eeeeeeexample.co/api/movies
@@ -52,9 +58,13 @@ ex)
  - eeeeeeexample.co/api/search?rating=9
 이런 URL은 개발자들이 필요에 의해서 의도적으로 노출시킨거임<br/>
 url을 사용하는 방법이 정해져 있어서, 아주 유추하기 쉽다는 장점이 있다.<br/>
+GET, POST, PUT, DELETE + URL(모두 다 같은, 명사만 이용한 url)
+- GET: 정보를 얻고싶을 때 read-only
+- POST: 정보를 만들고싶을 떄
+- PUT: 정보를 업데이트(수정)하고 싶을 때
+- DELETE: 정보를 삭제하고 싶을 때
 <br/>
-굉장히 많은 데이터를 돌려준다. 이걸 가공해서 유저에게 예쁘게 보여주면 된다.<br/>
-하지만... 너무 많은 데이터가 리턴되게 된다. 필요한것만 쏙쏙 받는게 어렵다. 
+하지만... 너무 많은 데이터가 리턴되게 된다. 이걸 가공해서 유저에게 예쁘게 보여주면 되지만, 필요한것만 쏙쏙 받는게 어렵다. 
 
 ------
 <!-- REST VS GraphQL -->
