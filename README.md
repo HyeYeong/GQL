@@ -20,7 +20,6 @@ GraphQL은 다양한 언어와 프레임워크에서 지원되며, 클라이언�
 graphQL은, API포맷
 
 ------
-
 schema란?
 서버와 클라이언트가 주고받을 데이터의 형식을 정의한 약속
 schema를 만드는 언어는 schema language
@@ -33,10 +32,30 @@ schema를 만드는 언어는 schema language
    따라서 GQL 서버에 어떠한 Query, Mutation들을 가졌고 타입이 무엇인지 알려주기 위한 것이 스키마 정의이다.
 
 ------
-
 Query language
 데이터를 요청할 때 사용하는 것
 
 ------
 우선은 type Query를 찾아야한다.
 Query란, 브라우저가 서버한테 필요한 정보를 질의한다, 라고 생각하기
+
+------
+API?(application programming interface)
+------
+#### REST api
+URL을 사용하여 서버와 클라이언트가 통신함.
+json을 리턴해줌 
+<br/>
+ex)
+ - eeeeeeexample.co/api/movies
+ - eeeeeeexample.co/api/movies/1
+ - eeeeeeexample.co/api/search?rating=9
+이런 URL은 개발자들이 필요에 의해서 의도적으로 노출시킨거임<br/>
+url을 사용하는 방법이 정해져 있어서, 아주 유추하기 쉽다는 장점이 있다.<br/>
+<br/>
+굉장히 많은 데이터를 돌려준다. 이걸 가공해서 유저에게 예쁘게 보여주면 된다.<br/>
+하지만... 너무 많은 데이터가 리턴되게 된다. 필요한것만 쏙쏙 받는게 어렵다. 
+
+------
+<!-- REST VS GraphQL -->
+<!-- 버튼이 다르게 생겼음 -->
